@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+
+/*Fontes*/
+
+body {
+    font-family: 'Lato', sans-serif;
+    color: #fff;
+    background-color: #353535;
+}
+
+a.animade-button {
+    position: relative;
+    display: block;
+    margin: 30px auto 0;
+    padding: 14px 15px;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    letter-spacing: 0.08em;
+    border-radius: 0;
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.2), 0 1px 0 rgba( 0, 0, 0, 0.2);
+}
+
+a.animade-button:link:after,
+a.animade-button:visited:after {
+    content: "";
+    position: absolute;
+    height: 0%;
+    left: 50%;
+    top: 50%;
+    width: 150%;
+    z-index: -1;
+    transition: all 0.75s ease 0s;
+}
+
+a.animade-button:link:hover:after,
+a.animade-button:visited:hover:after {
+    height: 400%;
+}
+
+a.animade-button {
+    width: 200px;
+    border: 2px solid #d24d57;
+}
+
+a.animade-button:after {
+    background: #d24d57;
+    transform: translateX(-50%) translateY(-50%) rotate(-25deg);
+}
